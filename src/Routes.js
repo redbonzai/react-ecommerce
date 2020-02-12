@@ -3,11 +3,11 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Register from './components/user/Register'
 import Login from './components/user/Login'
-import Home from './components/home'
+import Home from './components/core/home'
 
 const Routes = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter>        
             <Switch>
                 <Route path='/' exact component={Home} />   
                 <Route path='/register' exact component={Register} />
